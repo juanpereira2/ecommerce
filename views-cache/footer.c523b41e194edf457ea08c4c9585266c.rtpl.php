@@ -59,7 +59,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="copyright">
-                    <p>&copy; 2017 Hcode Treinamentos. <a href="http://www.hcode.com.br" target="_blank">hcode.com.br</a></p>
+                    <p>&copy; Made by Juan Pereira  <a href="https://www.linkedin.com/in/juan-pereira-b3277a138/" target="_blank">Linkedin</a></p>
                 </div>
             </div>
             
