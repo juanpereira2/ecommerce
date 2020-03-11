@@ -20,8 +20,8 @@ class User extends Model
             "SELECT * FROM tb_users WHERE deslogin = :LOGIN",
             array(
                 ":LOGIN" => $login
-            )
-        );
+                
+            ));
         if (count($results) === 0) {
             throw new \Exception("
         usuario inexsistente ou senha invalida");
@@ -35,8 +35,7 @@ class User extends Model
             $user->setData($data);
             //criate session
             $_SESSION[User::SESSION] = $user->getValues();
-
-            return $user;
+           // return $user;
         } else {
             throw new \Exception("
     inexsistente ou senha invalida");
@@ -51,7 +50,7 @@ class User extends Model
             ||
             !$_SESSION[User::SESSION]
             ||
-            !(int) $_SESSION[User::SESSION]["iduser"] > 0
+            !(int)$_SESSION[User::SESSION]["iduser"] > 0
             ||
             (bool) $_SESSION[User::SESSION]["inadmin"] !== $inadmin
         ) {
@@ -65,5 +64,22 @@ class User extends Model
         $_SESSION[User::SESSION] = NULL;
 
     }
+    
+    public static function listAll(){
+
+        $sql =new Sql();
+
+        $sql -> select("SELECT * FROM tb_users INNER JOIN tb_persons b USING
+        (idperson) ORDER BY b.desperson");
+    }
+
+    public function save(){
+
+        $sql =new Sql();
+
+        $sql ->select("");
+
+    }
+
 }
 ?>

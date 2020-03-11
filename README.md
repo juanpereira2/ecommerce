@@ -1,7 +1,8 @@
 # Projeto E-commerce
 
-Projeto desenvolvido do zero no [Curso de PHP 7](https://www.udemy.com/curso-completo-de-php-7/) disponível na plataforma da Udemy e no site do [HTML5dev.com.br](https://www.html5dev.com.br/curso/curso-completo-de-php-7).
+Project developed from scratch in [Curso de PHP 7](https://www.udemy.com/curso-completo-de-php-7/) available on the Udemy platform and on the [HTML5dev.com.br](https://www.html5dev.com.br/curso/curso-completo-de-php-7).
 
-Template usado no projeto [Almsaeed Studio](https://almsaeedstudio.com)
+Template used in the project [Almsaeed Studio](https://almsaeedstudio.com)
 
-Futuramente aplicar Docker e expandir o site 
+To install , you need to "git clone https://github.com/juanpereira2/ecommerce.git " inside your xampp repository (usually in the htdocs folder) and run inside your localhost
+
