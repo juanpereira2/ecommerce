@@ -46,7 +46,7 @@ $app->get('/admin/login/', function() {
 
 });
 
-$app ->post('/admin/login', function(){
+$app ->post('/admin/login/', function(){
 
 User::login($_POST["login"],$_POST["password"]);
 header("Location: /ecommerce/admin/");
@@ -102,7 +102,7 @@ $app->get("/admin/users/:iduser", function($iduser){
 });
 
 $app->post("/admin/users/create", function(){
-	User:: verifyLogin();
+	//User:: verifyLogin();
 
 
 	$user = new User();
